@@ -38,7 +38,7 @@ coords = [ciudades[n] for n in nombres]
 n = len(nombres)
 
 # =====================================
-# 2. MATRIZ DE DISTANCIAS (EUCLIDIANA EN GRADOS)
+# 2. MATRIZ DE DISTANCIAS 
 # =====================================
 
 def distancia_euclidea(i, j):
@@ -110,7 +110,7 @@ def tsp_vecino_mas_cercano(D, inicio=0):
     return ruta, longitud_ciclo(ruta, D), t1 - t0
 
 # =====================================
-# 4. GRÁFICOS (PLANO LAT-LON)
+# 4. GRÁFICOS 
 # =====================================
 
 def guardar_ruta_como_imagen(ruta, nombres, coords, archivo, titulo):
@@ -135,7 +135,7 @@ def guardar_ruta_como_imagen(ruta, nombres, coords, archivo, titulo):
     print(f"Imagen guardada en: {archivo}")
 
 # =====================================
-# 5. MAPA REAL (OSM) CON STATICMAP
+# 5. MAPA REAL 
 # =====================================
 
 def guardar_ruta_como_mapa(ruta, nombres, coords, archivo, size=(800, 800), zoom=7):
@@ -154,7 +154,7 @@ def guardar_ruta_como_mapa(ruta, nombres, coords, archivo, size=(800, 800), zoom
     print(f"Mapa guardado en: {archivo}")
 
 # =====================================
-# 6. MAIN
+# 6. MAIN  
 # =====================================
 
 if __name__ == "__main__":
